@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Encriptador</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<div class="contenedor">
+		
+		<header>
+			<img src="img/Logo.png" alt="Logo de ALURA">
+		</header>
+
+		<section class="main">
+			
+			<div class="mensaje">
+				<textarea id="mensaje-enc" placeholder="Ingrese el texto aquí"></textarea>
+			</div>
+
+			<div class="anuncio">
+				<p>&#9888; Solo letras minúsculas y sin acentos</p>
+			</div>
+
+			<div class="botones">
+				<button class="btn encrip" type="button" onclick="encriptar()">Encriptar</button>
+				<button class="btn desencrip" type="button" onclick="desencriptar()">Desencriptar</button>
+			</div>
+		</section>
+
+		<aside>
+			<div class="logo-busqueda">
+				<img id="img-munieco" src="img/Munieco.png">
+			</div>
+
+			<div class="anuncio">
+				<p id="anuncio">Ningún mensaje fue encontrado</p>
+			</div>
+
+			<div class="mensaje2">
+				<textarea id="mensajedes" placeholder="Ingrese el texto que desee encriptar o desencriptar"></textarea>
+			</div>
+
+			<div class="boton-copy">
+				<button id="btn-copy" class="btn copy" type="button" onclick="copiar()">Copiar</button>
+			</div>
+
+		</aside>
+
+		<footer>
+			<p>&#169; Copyright Eloy Cruz - 2022</p>
+		</footer>
+	</div>
+
+	<script src="js/funciones.js"></script>
+
+</body>
+</html>
+
+
